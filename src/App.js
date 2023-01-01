@@ -2,7 +2,6 @@ import { Component} from 'react';
 import CardList from './components/card-list/card-list.component';
 import SearchBox from './components/search-box/search-box.component';
 
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
@@ -62,7 +61,8 @@ class App extends Component {
 
     return (
       <div className="App">
-      <SearchBox onChangeHandler = {onSearchChange} placeholder = 'search monster' className='search-box'/>
+      <h1 className='app-title'>Monster React JS Project</h1>
+      <SearchBox onChangeHandler = {onSearchChange} placeholder = 'search monster' className='monsters-search-box'/>
       <CardList monsters={filteredMonsters} />
       </div>
     );
